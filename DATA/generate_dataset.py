@@ -15,5 +15,5 @@ final_score=(study_hours*5+attendance*0.8+assignment*0.3+internal_marks*0.5+np.r
 final_score=np.clip(final_score,40,99)
 
 data=pd.DataFrame({"study_hours":study_hours,"attendance":attendance,"assignment":assignment,"internal_marks":internal_marks,"final_score":final_score})
-data.to_csv("STUDENT_DATASET.csv",index=False)
+data.to_csv("DATA/STUDENT_DATASET.csv",index=False)
 print("Dataset created successfully.")
